@@ -1,0 +1,10 @@
+/target/
+
+/.myeclipse/
+/.settings/
+.classpath
+.project
+msg.log
+.tern-project
+
+
