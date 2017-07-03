@@ -22,7 +22,7 @@
 		</SMTP>
 	</Appenders>
 	<Loggers>
-		<logger name="life.service" level="TRACE"></logger>
+		<logger name="myself.service" level="TRACE"></logger>
 		<Root level="info">
 			<AppenderRef ref="Console" />
 		</Root>

@@ -24,7 +24,7 @@
 	<!-- 启动Spring MVC的注解功能，完成请求和注解POJO的映射 -->
 	<!-- 保证spring-mvc.xml的context:component-scan只扫描Controller,而 applicationContext.xml里的不包含Controller. 
 		否则在applicationContext.xml里的事务就要失效了。 -->
-	<context:component-scan base-package="life"
+	<context:component-scan base-package="myself"
 		use-default-filters="false">
 		<context:include-filter type="annotation"
 			expression="org.springframework.stereotype.Controller" />
@@ -44,7 +44,7 @@
 
 	<!-- 自定义类型绑定 -->
 	<bean id="bindingInitializer"
-		class="life.base.webmvc.initbinder.BindingInitializer" />
+		class="myself.base.webmvc.initbinder.BindingInitializer" />
 
 	<!-- 开启MVC的JSON功能。可以使用@ResponseBody和@RequestBody来输出和输入JSON串 -->
 	<bean id="mappingJacksonHttpMessageConverter"

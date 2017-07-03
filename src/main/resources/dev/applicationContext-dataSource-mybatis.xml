@@ -15,8 +15,8 @@
 		<property name="dataSource" ref="dataSource" />
 	</bean>
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" value="life" />
+		<property name="basePackage" value="myself" />
 		<property name="annotationClass"
-			value="life.base.mybatis.annotation.MyBatisRepository" />
+			value="myself.base.mybatis.annotation.MyBatisRepository" />
 	</bean>
 </beans>

@@ -18,7 +18,7 @@
 
 
 	<bean id="urlperms"
-		class="life.base.security.filter.UrlPermissionsAuthorizationFilter" >
+		class="myself.base.security.filter.UrlPermissionsAuthorizationFilter" >
 	</bean>
 
 	
@@ -67,7 +67,7 @@
 
 
 	<bean id="shiroDataBaseRealm"
-		class="life.base.security.realm.ShiroDataBaseRealm">
+		class="myself.base.security.realm.ShiroDataBaseRealm">
 		 <property name="defaultRoles" value="ROLE_USER"/>
 		<property name="casServerUrlPrefix" value="${cas_host}/cas" />
 		 <property name="casService" value="${audit_host}/shiro-cas"/>
@@ -120,9 +120,9 @@
 		<property name="password" value="${redis.password}" />
 	</bean>
 
-	<bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor" />
+	<bean id="myselfcycleBeanPostProcessor" class="org.apache.shiro.spring.myselfcycleBeanPostProcessor" />
 	<!-- <bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator" 
-		depends-on="lifecycleBeanPostProcessor"> <property name="proxyTargetClass" 
+		depends-on="myselfcycleBeanPostProcessor"> <property name="proxyTargetClass" 
 		value="false" /> </bean> -->
 
   <bean class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">  

@@ -57,7 +57,7 @@
 
 	<aop:config>
 		<aop:pointcut id="defaultService"
-			expression="execution(public * life..service..*.*(..)))" />
+			expression="execution(public * myself..service..*.*(..)))" />
 		<aop:advisor pointcut-ref="defaultService" advice-ref="defaultTxAdvice" />
 	</aop:config>
 </beans>

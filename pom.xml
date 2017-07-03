@@ -2,10 +2,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.gd.app</groupId>
-	<artifactId>life</artifactId>
+	<artifactId>myself</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.13-SNAPSHOT</version>
-	<name>life</name>
+	<name>myself</name>
 	<url>http://maven.apache.org</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -305,9 +305,9 @@
 			<version>${jsoup.version}</version>
 		</dependency>
 	</dependencies>
-	<!-- <distributionManagement> <snapshotRepository> <id>snapshots</id> <name>life</name> 
+	<!-- <distributionManagement> <snapshotRepository> <id>snapshots</id> <name>myself</name> 
 		<url>http://123.57.213.13:8081/nexus/content/repositories/snapshots/</url> 
-		</snapshotRepository> <repository> <id>release</id> <name>life</name> <url>http://123.57.213.13:8081/nexus/content/repositories/releases/</url> 
+		</snapshotRepository> <repository> <id>release</id> <name>myself</name> <url>http://123.57.213.13:8081/nexus/content/repositories/releases/</url> 
 		</repository> </distributionManagement> -->
 	<build>
 		<resources>
@@ -461,7 +461,7 @@
 				</executions>
 			</plugin>
 		</plugins>
-		<finalName>life</finalName>
+		<finalName>myself</finalName>
 	</build>
 
 	<profiles>
